@@ -24,23 +24,15 @@ for (let i = 0; i < navbarItems.length; i++) {
 
 //====================== COFEE PRODUCTS ===========================//
 
-// objekt s properties pro komponentu Drink
-const productObj = {
-  id: 'romano',
-  name: 'Romano',
-  ordered: false,
-  layers: [
-    {
-      color: '#fbdf5b',
-      label: 'citrón',
-    },
-    {
-      color: '#613916',
-      label: 'espresso',
-    },
-  ],
+// zachytit element, kam vložím komponentu Drink
+
+const getDrinks = (drinks) => {
+  const product = document.querySelector('.drinks-list');
+  drinks.forEach((drink) => {
+    product.appendChild(Drink(drink));
+  });
 };
 
-// zachytit element, kam vložím komponentu Drink
-const product = document.querySelector('.drinks-list');
-product.appendChild(Drink(productObj));
+fetch('https://run.mocky.io/v3/920f04d5-bf2e-49b3-9402-c693e6ea9499')
+  .then((response) => response.json())
+  .then(getDrinks);

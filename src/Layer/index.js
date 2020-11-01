@@ -1,11 +1,11 @@
 import './style.css';
 
 // komponenta pro layer
-export const Layer = (props) => {
+export const Layer = ({ color, label }) => {
   const layerElm = document.createElement('div');
-  for (let i = 0; i < props.length; i++) {
-    layerElm.setAttribute('class', 'layer');
-    layerElm.innerHTML += `<div class="layer__color" style="background-color: ${props[i].color}"></div><div class="layer__label">${props[i].label}</div>`;
-  }
+  layerElm.setAttribute('class', 'layer');
+  layerElm.innerHTML = `
+    <div class="layer__color" style="background-color: ${color}"></div>
+    <div class="layer__label">${label}</div>`;
   return layerElm;
 };

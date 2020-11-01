@@ -1,2 +1,2 @@
-# cafelora-zadani
+# cafelora
 Základ projektu pro Café Lóra
