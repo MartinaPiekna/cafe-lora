@@ -11,7 +11,7 @@ html {
 
 body {
   margin: 0;
-  background-image: url('./img/spots.png');
+  background-image: url('./assets/img/spots.png');
   color: white;
 }
 
@@ -56,7 +56,7 @@ header {
 .site-logo {
   width: 180px;
   height: 50px;
-  background-image: url('./img/site-logo.png');
+  background-image: url('./assets/img/site-logo.png');
   background-size: contain;
 }
 
@@ -95,7 +95,7 @@ nav a:hover {
   padding: 0;
   border: none;
   background-color: transparent;
-  background-image: url('./img/menu.png');
+  background-image: url('./assets/img/menu.png');
   background-size: contain;
   cursor: pointer;
 }
@@ -106,7 +106,7 @@ nav a:hover {
 
 .banner {
   padding-top: 0;
-  background-image: url('./img/beans.jpg');
+  background-image: url('./assets/img/beans.jpg');
   background-size: cover;
   background-position: top center;
 }
@@ -132,7 +132,7 @@ nav a:hover {
   height: 100vh;
   display: flex;
   color: white;
-  background-image: url('./img/gallery.jpg');
+  background-image: url('./assets/img/gallery.jpg');
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
